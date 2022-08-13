@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const negociacao_1 = require("./models/negociacao");
-const negociacao = new negociacao_1.Negociacao(new Date(), 10, 100);
-console.log(negociacao.volume);
+const negociacao_controler_js_1 = require("./controllers/negociacao-controler.js");
+const controller = new negociacao_controler_js_1.NegociacaoController();
+const form = document.querySelector(".form");
