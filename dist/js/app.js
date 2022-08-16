@@ -1,5 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const negociacao_controler_js_1 = require("./controllers/negociacao-controler.js");
-const controller = new negociacao_controler_js_1.NegociacaoController();
+import { NegociacaoController } from "./controllers/negociacao-controler.js";
+const controller = new NegociacaoController();
 const form = document.querySelector(".form");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    controller.adiciona();
+});
